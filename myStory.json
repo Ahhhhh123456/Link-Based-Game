@@ -1,0 +1,98 @@
+{
+    "Title": "Going Back Home",
+    "Credits": "Created by Jason Li (jli714@ucsc.edu) , original by  Adam Smith (amsmith@ucsc.edu).",
+    "InitialLocation": "Campus",
+    "Locations": {
+        "Campus": {
+            "Body": "The lecture I was attending just ended.",
+            "Choices": [
+                {
+                    "Text": "Go to Bus",
+                    "Target": "Bus Stop"
+                }
+            ]
+        },
+        "Bus Stop": {
+            "Body": "I go to the bus stop, I am now waiting for the 18 bus to go home. The bus comes and I get on it. I feel a little tired.",
+            "Choices": [
+                {
+                    "Text": "Sleep",
+                    "Target": "Metro_Station"
+                },
+                {
+                    "Text": "Don't Sleep",
+                    "Target": "Don't Sleep"
+                }
+            ]
+        },
+        "Metro_Station": {
+            "Body": "I go to sleep and I ended up oversleeping. Now I'm at the metro station. I felt something in my pocket. It was the key to my house.",
+            "Choices": [
+                {
+                    "Text": "Walk Home",
+                    "Target": "Walk Home"
+                }
+            ]
+        },
+        "Walk Home": {
+            "Body": "I decide to walk home. I then notice a cat. Also, I see a basketball game going on. Do I:",
+            "Choices": [
+                {
+                    "Text": "Look at the basketball game",
+                    "Target": "Basketball"
+                },
+                {
+                    "Text": "Pet the cat",
+                    "Target": "Cat"
+                }
+            ]
+        },
+        "Basketball": {
+            "Body": "I end up looking at the basketball game for a few minutes. Then I continue to keep walking home",
+            "Choices": [
+                {
+                    "Text": "Continue",
+                    "Target": "Home"
+                }
+            ]
+        },
+        "Cat": {
+            "Body": "I end up petting the cat. The cat doesn't mind it. The cat looks happy. Then I continue to keep walking home.",
+            "Choices": [
+                {
+                    "Text": "Continue",
+                    "Target": "Home"
+                }
+            ]
+        },
+        "Don't Sleep": {
+            "Body": "I decide to not sleep. After a while, I get off the bus on my stop. Now, I go and walk home",
+            "Choices": [
+                {
+                    "Text": "Go Home",
+                    "Target": "Home"
+                }
+            ]
+        },
+        "Home": {
+            "Body": "I'm now at home. As I approach my door, it's locked",
+            "Choices": [
+                {
+                    "Text": "Try to open the locked door.",
+                    "Target": "End1"
+                },
+                {
+                    "Text": "Open the locked door with the key ",
+                    "Target": "End2"
+                }
+            ]
+        },
+        "End1": {
+            "Body": "I try budging the locked door with no results, now I'm stuck."
+        },
+        "End2": {
+            "Body": "I open the door with my key that was in my pocket. I'm now home."
+        }
+
+    }
+}
